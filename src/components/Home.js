@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Card, Button } from 'react-bootstrap'
+import pic from '../images/bank.jpg'; 
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,16 +13,16 @@ export default class Home extends Component {
     return (
       <div>
         <Container>
-          <Card style={{ width:'18rem' }}>
-            <Card.Img variant="top" src=""/>
+          <Card className="text-center">
+            <Card.Img variant="top" src={pic} />
               <Card.Body>
                 <Card.Title>Welcome To Bad Bank!</Card.Title>
                 <Card.Text>
                   This is seriously not a good bank, we will post all of your information
-                  so we chose to name ourselves after our true intentions! I mean hey... At 
-                  least we are honest about it...
+                  so we chose to name ourselves after our true intentions, but I mean hey... At 
+                  least we're honest about it.
                 </Card.Text>
-                <Button variant="danger">Enter at your own risk</Button>
+                <Link to="/Createaccount"><Button variant="danger" >Enter at your own risk</Button></Link>
               </Card.Body>
           </Card>
         </Container>
