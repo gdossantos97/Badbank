@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbarcomp from './components/Navbarcomp'
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 import Alldata from './components/Alldata';
 import Home from './components/Home';
 import Deposit from './components/Deposit';
@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       
-      <Navbarcomp/>
+    <Navbarcomp/>
 
 
     </div>
